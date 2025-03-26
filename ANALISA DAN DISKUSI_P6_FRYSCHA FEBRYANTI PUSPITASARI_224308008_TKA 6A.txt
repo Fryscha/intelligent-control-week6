@@ -1,0 +1,31 @@
+Nama		 	:  Fryscha Febryanti Puspitasari
+NIM 	 		:  224308008
+Kelas 	 		:  TKA 6A
+Akun Github (Tautan) 	:  https://github.com/Fryscha
+Student Lab Assistant 	:  Yulia Brilianty
+
+Analisis Hasil:
+a. Seberapa baik deteksi jalur dengan Instance Segmentation?
+Jawab:
+Deteksi jalur dengan Instance Segmentation umumnya sangat baik, terutama dalam kondisi di mana jalur harus dibedakan dari latar belakang yang kompleks. Instance Segmentation mampu mengidentifikasi dan memisahkan setiap objek individu dalam citra, termasuk jalur, dengan presisi tinggi. Ini memungkinkan deteksi yang lebih akurat dibandingkan metode deteksi jalur tradisional, terutama dalam situasi di mana jalur tumpang tindih atau terdapat banyak gangguan visual.
+
+b. Apakah kombinasi kedua metode dapat meningkatkan akurasi?
+Jawab:
+Ya, kombinasi Canny Edge Detection dengan Instance Segmentation dapat meningkatkan akurasi deteksi jalur. Canny Edge Detection efektif dalam mendeteksi tepi yang halus dan akurat, sementara Instance Segmentation dapat memisahkan dan mengidentifikasi objek individu. Dengan menggabungkan kedua metode ini, sistem dapat memanfaatkan kekuatan masing-masing untuk meningkatkan deteksi jalur, terutama dalam kondisi pencahayaan yang buruk atau lingkungan yang kompleks.
+
+c. Apa dampak perubahan parameter Canny (thresholds) terhadap hasil deteksi?
+Jawab:
+Perubahan parameter threshold pada Canny Edge Detection dapat secara signifikan mempengaruhi hasil deteksi. Threshold yang lebih rendah dapat menyebabkan lebih banyak tepi terdeteksi, termasuk noise, sementara threshold yang lebih tinggi dapat mengabaikan tepi yang lebih halus. Oleh karena itu, pemilihan threshold yang tepat sangat penting untuk mencapai keseimbangan antara mendeteksi tepi yang relevan dan meminimalkan deteksi tepi palsu.
+
+Diskusi:
+a. Kapan lebih baik menggunakan Canny Edge Detection dibanding Instance Segmentation?
+Jawab:
+Canny Edge Detection lebih baik digunakan dalam situasi di mana deteksi tepi yang cepat dan efisien diperlukan, dan ketika objek dalam citra memiliki kontras yang jelas dengan latar belakang. Ini juga lebih cocok untuk aplikasi dengan sumber daya komputasi terbatas, karena Canny Edge Detection umumnya lebih ringan dibandingkan Instance Segmentation.
+
+b. Bagaimana cara meningkatkan deteksi jalur dengan tuning parameter YOLOv8-seg?
+Jawab:
+Untuk meningkatkan deteksi jalur dengan YOLOv8-seg, tuning parameter seperti learning rate, batch size, dan anchor boxes dapat dilakukan. Selain itu, augmentasi data dan penggunaan dataset yang lebih beragam dapat membantu model belajar lebih baik. Memperhatikan arsitektur model dan menyesuaikannya dengan kebutuhan spesifik juga dapat meningkatkan kinerja deteksi.
+
+c. Bagaimana metode ini dapat diterapkan dalam sistem navigasi kereta otomatis?
+Jawab:
+Metode ini dapat diterapkan dalam sistem navigasi kereta otomatis dengan menyediakan deteksi jalur yang akurat dan real-time, yang penting untuk navigasi yang aman dan efisien. Dengan mengintegrasikan deteksi jalur berbasis Instance Segmentation dan Canny Edge Detection, sistem dapat lebih baik dalam mengenali jalur rel dan menghindari potensi bahaya. Ini juga memungkinkan sistem untuk beradaptasi dengan berbagai kondisi lingkungan, seperti perubahan cuaca atau rintangan di jalur.
